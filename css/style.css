@@ -117,6 +117,7 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 #selected-wrapper {
@@ -128,6 +129,9 @@ ul {
 #payments {
 	color: gray;
 	font-size: 0.6rem;
+	text-align: left;
+	padding-right: 20px;
+	margin-left: 10px;
 }
 
 #total-el {
@@ -143,5 +147,12 @@ ul {
 @media (max-width: 630px) {
 	main {
 		width: 400px;
+	}
+}
+
+@media (max-width: 430px) {
+	main {
+		width: 300px;
+		font-size: 20px;
 	}
 }
