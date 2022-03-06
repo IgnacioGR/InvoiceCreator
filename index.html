@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>InvoiceCreator</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<div id="top-container">
+				<h1>Invoice Creator</h1>
+				<p>Thank you for choosing us</p>
+			</div>
+			<div id="bottom-container">
+				<ul id="btn-wrapper"></ul>
+				<div class="full-width">
+					<div class="header">
+						<p>TASK</p>
+						<p>TOTAL</p>
+					</div>
+					<ul id="selected-wrapper"></ul>
+				</div>
+				<hr />
+				<div class="full-width">
+					<div class="header">
+						<p>NOTES</p>
+						<p>TOTAL AMOUNT</p>
+					</div>
+					<div class="flex-wrapper full-width">
+						<p id="payments">We accept cash, credit card or Paypal</p>
+						<p id="total-el">$0</p>
+					</div>
+				</div>
+				<button id="invoice-btn">Send Invoice</button>
+			</div>
+		</main>
+		<script src="index.js"></script>
+	</body>
+</html>

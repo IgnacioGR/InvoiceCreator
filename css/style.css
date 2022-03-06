@@ -1,0 +1,147 @@
+:root {
+	--main-color: #1a1a1a;
+	--secondary-color: #834805;
+}
+
+html,
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Fredoka", sans-serif;
+	text-align: center;
+	font-size: 25px;
+}
+
+main {
+	width: 600px;
+	height: 600px;
+	background-color: var(--main-color);
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+}
+
+h1,
+p {
+	margin: 0;
+}
+
+button {
+	border: none;
+	color: white;
+	border-radius: 3px;
+	font-family: "Fredoka", sans-serif;
+}
+
+button:hover {
+	box-shadow: 0 0 30px black;
+}
+
+hr {
+	width: 100%;
+	height: 1px;
+	border-width: 0;
+	background-color: gray;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.task-btn {
+	margin: 0;
+	width: 110px;
+	height: 30px;
+	background-color: gray;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.5rem;
+	color: gray;
+}
+
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 !important;
+}
+
+.remove-btn {
+	background-color: var(--main-color);
+	font-size: 0.5rem;
+	color: gray;
+}
+
+.remove-btn:hover {
+	box-shadow: 0 var(--main-color);
+	color: white;
+}
+
+#top-container {
+	height: 25%;
+	background-color: var(--secondary-color);
+	border-radius: 5px 5px 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#bottom-container {
+	height: 75%;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#bottom-container * {
+	margin: 5px;
+}
+
+#btn-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#selected-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#payments {
+	color: gray;
+	font-size: 0.6rem;
+}
+
+#total-el {
+	font-size: 1.8rem;
+}
+
+#invoice-btn {
+	width: 100%;
+	padding: 5px;
+	background-color: var(--secondary-color);
+}
+
+@media (max-width: 630px) {
+	main {
+		width: 400px;
+	}
+}
